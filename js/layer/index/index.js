@@ -200,7 +200,6 @@ define(["common/startMove"], function () {
     };
 
     var init = function () {
-        mainObject.loadData();
         mainObject.registerEvents();
     };
     return init();
