@@ -1,0 +1,385 @@
+@charset "utf-8";
+
+body{
+    background: #0d0f35;
+}
+
+/* header */
+.header {
+    z-index: 999;
+    color: #8398b7;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.header .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header .logo {
+    float: left;
+    padding: 20px 0 0 0;
+}
+
+.header .login-box{
+    float: right;
+    padding-top: 14px;
+}
+
+
+img {
+    vertical-align: middle;
+}
+
+/* banner */
+.grid1200 {
+    width: 1200px;
+    margin: 0 auto
+}
+
+.banner ul li {
+    height: 720px;
+    display: block;
+    position: relative;
+    background: url("../images/banner2.jpg") center top;
+}
+
+.banner ul li .banner-tit {
+    font-size: 50px;
+    color: #ffffff;
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    z-index: 1000;
+    width: 700px;
+}
+
+.banner ul li .banner-list {
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    z-index: 1000;
+    width: 700px;
+}
+
+.banner ul li .banner-list span {
+    line-height: 80px;
+    margin: 0 20px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.banner ul li .banner-list .solid-white {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+}
+
+.banner ul li a.banner-btn {
+    background: url("../images/enter-task-btn.png") no-repeat;
+    color: #ffffff;
+    left: 104px;
+    line-height: 40px;
+    width: 130px;
+    position: absolute;
+    top: 440px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.banner ul li a.banner-btn:hover {
+    background: url("../images/enter-task-btn.png") no-repeat rgba(0, 0, 0, 0.2);
+    color: #eee;
+}
+
+.banner-center {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.banner .img {
+    position: absolute;
+}
+
+.banner .big-title01{
+    position: absolute;
+    top: 234px;
+    left: 98px;
+}
+.banner .big-title02{
+    position: absolute;
+    top: 338px;
+    left: 98px;
+}
+.banner .sun-icon{
+    position: absolute;
+    top: 260px;
+    left: 638px;
+}
+.banner .sun-icon1{
+    position: absolute;
+    top: 454px;
+    right: 300px;
+}
+.banner .sun-icon2{
+    position: absolute;
+    top: 422px;
+    left: 406px;
+}
+
+/* content */
+.application-box{
+    background: url("../images/banner5.jpg") center 0 no-repeat;
+    /*background-size: 100%;*/
+    position: relative;
+}
+.application-box .title-top{
+    text-align: center;
+    font-size: 50px;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+.application-box .txt-top{
+    text-align: center;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+    letter-spacing: 3px;
+}
+.application-box .tab-nav {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+.application-box .tab-nav li{
+    width: 100px;
+    float: left;
+    text-align: center;
+    color: #505463;
+}
+.application-box .tab-nav .active{
+    color: #008dff;
+    position: relative;
+}
+.application-box .tab-nav .active i{
+    position: absolute;
+    left: 22px;
+    bottom: -5px;
+    display: block;
+    height: 1px;
+    width: 54px;
+    background: #008dff;
+}
+.content-outer{
+    position: relative;
+    overflow: hidden;
+    width: 1500px;
+    margin: 0 auto
+}
+
+.content-outer .main{
+    width: 1200px;
+    min-height: 525px;
+    position:relative;
+    /*background: #012fb5;*/
+    overflow: hidden;
+}
+.application-box .content-outer #ul-box{
+    position:absolute;
+    left:0;
+}
+.application-box .content-outer .tab-box{
+    float:left;
+    position:absolute;
+    filter:alpha(opacity=0);
+    opacity:0;
+}
+.application-box .content-outer .btn-box{
+    position: absolute;
+    right: 0;
+    top: 76px;
+    background: url("../images/tab-bg-line.png") repeat-x;
+    width: 600px;
+    height: 370px;
+    -webkit-box-shadow: 1px 1px 20px #050e2e;
+    -moz-box-shadow: 1px 1px 20px #050e2e;
+    box-shadow: 1px 1px 20px #050e2e;
+    z-index: 9999999999;
+}
+@media screen and (max-width: 1280px) {
+    .application-box .content-outer .btn-box{
+        right: 0;
+    }
+    .content-outer{
+        width: 1200px;
+        margin: 0 auto
+    }
+}
+@media screen and (min-width:1281px) and (max-width:1368px) {
+    .application-box .content-outer .btn-box{
+        right: 0;
+    }
+    .content-outer{
+        width: 1349px;
+        margin: 0 auto
+    }
+}
+@media screen and (min-width:1369px) and (max-width:1680px) {
+    .application-box .content-outer .btn-box{
+        right: 0px;
+    }
+    .content-outer{
+        width: 1500px;
+        margin: 0 auto
+    }
+}
+@media screen and (min-width:1681px) and (max-width:1919px) {
+    .application-box .content-outer .btn-box{
+        right: 0px;
+    }
+    .content-outer{
+        width: 1500px;
+        margin: 0 auto
+    }
+}
+.application-box .content-outer .tab-con{
+    display: none;
+    width: 254px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+.btn-box .content-inner .active{
+    display: block;
+}
+.application-box .content-outer .line{
+    margin-top: 24px;
+    display: block;
+    background: #008dff;
+    width: 24px;
+    height: 3px;
+}
+.application-box .content-outer .tab-con .big-txt{
+    padding-top: 24px;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.application-box .content-outer .tab-con .small-txt{
+    padding-top: 22px;
+    font-size: 12px;
+    color: #e5e5e5;
+    line-height: 20px;
+}
+.content-outer .btn-box .left-btn{
+    position: absolute;
+    left: 90px;
+    top: 144px;
+}
+.content-outer .btn-box .right-btn{
+    position: absolute;
+    right: 90px;
+    top: 144px;
+}
+#left-btn-not{
+    display: none;
+    cursor: not-allowed;
+}
+#right-btn-not{
+    display: none;
+    cursor: not-allowed;
+}
+
+.service-box{
+    background: url("../images/banner3.jpg") center 0 no-repeat;
+    /*background-size: 100%;*/
+}
+.service-box .title{
+    padding: 140px 0 90px;
+    text-align: center;
+}
+.service-box .inner{
+    padding-bottom: 60px;
+}
+.service-box .inner ul{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.service-box .inner ul li{
+    float: left;
+    width: 333px;
+    text-align: center;
+}
+.service-box .inner ul li .big-txt{
+    font-family: "Microsoft YaHei";
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-top: 40px;
+}
+.service-box .inner ul li .small-txt{
+    font-size: 14px;
+    color: #a2b4d3;
+    padding-top: 20px;
+    line-height: 24px;
+}
+
+.advantage-box{
+    background: url("../images/banner4.jpg") center 0 no-repeat;
+}
+.advantage-box .title{
+    padding: 110px 100px 94px;
+}
+.advantage-box .inner{
+    padding-left: 100px;
+    padding-bottom: 76px;
+    overflow: hidden;
+    clear: both;
+}
+.advantage-box .inner ul{
+    width: 712px;
+    overflow: hidden;
+    clear: both;
+}
+.advantage-box .inner ul li{
+    float: left;
+    width: 356px;
+    padding-bottom: 60px;
+}
+.advantage-box .inner ul li .big-txt{
+    font-family: "Microsoft YaHei";
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-top: 25px;
+}
+.advantage-box .inner ul li .small-txt{
+    font-size: 14px;
+    color: #a2b4d3;
+    padding-top: 20px;
+    line-height: 24px;
+}
+
+
+
+.bg-blue {
+    background-color: #eff7fd
+}
+
+.bullhorn-row{
+    width: 1160px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px
+
+}
