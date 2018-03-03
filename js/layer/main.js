@@ -65,7 +65,7 @@ require([
     var target = location.pathname;
     var match = null;
     switch (target) {
-        case "/scc/":
+        case "/":
             match = "layer/index/index";
             break;
         default:
